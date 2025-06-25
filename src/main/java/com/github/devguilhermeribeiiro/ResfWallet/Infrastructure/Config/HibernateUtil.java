@@ -1,8 +1,9 @@
 package com.github.devguilhermeribeiiro.ResfWallet.Infrastructure.Config;
 
-import org.eclipse.jetty.server.Authentication.User;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import com.github.devguilhermeribeiiro.ResfWallet.Domain.Entities.User;
 
 public class HibernateUtil {
     public static SessionFactory buildSessionFactory() {
