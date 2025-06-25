@@ -18,7 +18,7 @@ public class UserController {
     }
 
     public Handler getUser = ctx -> {
-        UUID id = UUID.fromString(ctx.pathParam("id"));
+        UUID id = UUID.fromString(ctx.queryParam("id"));
 
         try {
             UserResponseDto userResponseDto = userService.getUser(id);
@@ -36,7 +36,7 @@ public class UserController {
     };
 
     public Handler updateUser = ctx -> {
-        UUID id = UUID.fromString(ctx.pathParam("id"));
+        UUID id = UUID.fromString(ctx.queryParam("id"));
     
         try {
             UserRequestDto userRequestDto = ctx.bodyAsClass(UserRequestDto.class);
@@ -49,7 +49,7 @@ public class UserController {
     };
 
     public Handler deleteUser = ctx -> {
-        UUID id = UUID.fromString(ctx.pathParam("id"));
+        UUID id = UUID.fromString(ctx.queryParam("id"));
         var response = userService.deleteUser(id);
 
         if (response != 0) {
