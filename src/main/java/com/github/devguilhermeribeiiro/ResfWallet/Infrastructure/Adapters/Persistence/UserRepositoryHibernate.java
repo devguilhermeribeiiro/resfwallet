@@ -9,7 +9,7 @@ import org.hibernate.Transaction;
 
 import com.github.devguilhermeribeiiro.ResfWallet.Application.Exceptions.NotFoundException;
 import com.github.devguilhermeribeiiro.ResfWallet.Domain.Entities.User;
-import com.github.devguilhermeribeiiro.ResfWallet.Domain.Ports.Outbound.UserRepositoryPort;
+import com.github.devguilhermeribeiiro.ResfWallet.Domain.Ports.UserRepositoryPort;
 
 public class UserRepositoryHibernate implements UserRepositoryPort {
     private SessionFactory sessionFactory;
