@@ -26,11 +26,9 @@ public class App {
             config.router.apiBuilder(() -> {
                 path("/users", () -> {
                     post(userController.createUser);
-                    path("{id}", () -> {
-                        get(userController.getUser);
-                        patch(userController.updateUser);
-                        delete(userController.deleteUser);
-                    });
+                    get(userController.getUser);
+                    patch(userController.updateUser);
+                    delete(userController.deleteUser);
                 });
             });
         });
