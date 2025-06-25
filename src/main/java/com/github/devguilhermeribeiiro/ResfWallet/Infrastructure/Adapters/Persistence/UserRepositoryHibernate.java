@@ -21,7 +21,10 @@ public class UserRepositoryHibernate implements UserRepositoryPort {
     @Override
     public Optional<User> findById(UUID id) {
         try(Session session = sessionFactory.openSession()) {
-            return Optional.ofNullable(session.find(User.class, id));
+            Transaction transaction = session.beginTransaction();
+            User user = session.find(User.class, id);
+            transaction.commit();
+            return Optional.ofNullable(user);
         }
     }
 
