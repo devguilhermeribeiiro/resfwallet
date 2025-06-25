@@ -1,1 +1,10 @@
-com/github/devguilhermeribeiiro/ResfWallet/Infra/Utils/HibernateUtil.class
+com/github/devguilhermeribeiiro/ResfWallet/Domain/Ports/UserRepositoryPort.class
+com/github/devguilhermeribeiiro/ResfWallet/Infrastructure/Config/HibernateUtil.class
+com/github/devguilhermeribeiiro/ResfWallet/Application/Exceptions/NotFoundException.class
+com/github/devguilhermeribeiiro/ResfWallet/Application/Services/UserService.class
+com/github/devguilhermeribeiiro/ResfWallet/App.class
+com/github/devguilhermeribeiiro/ResfWallet/Infrastructure/Adapters/Persistence/UserRepositoryHibernate.class
+com/github/devguilhermeribeiiro/ResfWallet/Application/Dtos/UserResponseDto.class
+com/github/devguilhermeribeiiro/ResfWallet/Application/Dtos/UserRequestDto.class
+com/github/devguilhermeribeiiro/ResfWallet/Domain/Entities/User.class
+com/github/devguilhermeribeiiro/ResfWallet/Infrastructure/Adapters/Web/UserController.class

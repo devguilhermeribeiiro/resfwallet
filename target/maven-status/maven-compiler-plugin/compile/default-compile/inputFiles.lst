@@ -1,2 +1,10 @@
 /home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/App.java
-/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Utils/Utils/HibernateUtil.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Application/Dtos/UserRequestDto.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Application/Dtos/UserResponseDto.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Application/Exceptions/NotFoundException.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Application/Services/UserService.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Domain/Entities/User.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Domain/Ports/UserRepositoryPort.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Infrastructure/Adapters/Persistence/UserRepositoryHibernate.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Infrastructure/Adapters/Web/UserController.java
+/home/guilherme/Development/JavaProjects/ResfWallet/src/main/java/com/github/devguilhermeribeiiro/ResfWallet/Infrastructure/Config/HibernateUtil.java
