@@ -32,7 +32,14 @@ public class Transaction {
     @Column(nullable = false)
     private final Date date;
 
-    public Transaction() {}
+    public Transaction() {
+        this.ticker = null;
+        this.transactionType = null;
+        this.price = null;
+        this.quantity = 0;
+        this.date = null;
+        
+    }
 
     public Transaction(
         String ticker,
