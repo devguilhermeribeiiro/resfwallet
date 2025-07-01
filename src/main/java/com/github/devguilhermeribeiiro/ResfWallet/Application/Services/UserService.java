@@ -19,11 +19,7 @@ public class UserService {
     public UserResponseDto getUser(UUID id) {
         Optional<User> optionalUser = userRepository.findById(id);
 
-        if (!optionalUser.isPresent()) {
-            throw new NotFoundException("User not found.");
-        }
-
-        User user = optionalUser.get();
+        User user = optionalUser.orElseThrow(() -> new NotFoundException("User not found"));
 
         return new UserResponseDto(user.getId(), user.getName(), user.getEmail());
     }
@@ -41,10 +37,7 @@ public class UserService {
     public UserResponseDto updateUser(UUID id, UserRequestDto userRequestDto) {
         Optional<User> optionalUser = userRepository.findById(id);
 
-        if (!optionalUser.isPresent()) {
-            throw new NotFoundException("User not found");
-        }
-        User user = optionalUser.get();
+        User user = optionalUser.orElseThrow(() -> new NotFoundException("User not found"));
         user.setName(userRequestDto.name());
         user.setEmail(userRequestDto.email());
         user.setPassword(userRequestDto.password());
